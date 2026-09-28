@@ -1130,7 +1130,11 @@ a:focus-visible, button:focus-visible {
    19. RESPONSIVE
 ────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .hero-inner, .about-inner, .location-inner { grid-template-columns: 1fr; gap: 52px; }
+  .about-inner,
+.location-inner {
+  grid-template-columns: 1fr;
+  gap: 52px;
+}
   .hero-visual { max-width: 440px; margin: 0 auto; }
   .about-visual { max-width: 440px; margin: 0 auto; }
   .about-accent-card { right: 0; }
@@ -1279,5 +1283,20 @@ a:focus-visible, button:focus-visible {
 
   .hero-dots {
     display: flex;
+  }
+}
+
+
+/* FINAL HERO DESKTOP / TABLET FIX */
+@media (min-width: 769px) {
+  .hero-inner {
+    grid-template-columns: 1.1fr 0.9fr !important;
+    gap: 72px !important;
+    align-items: center !important;
+  }
+
+  .hero-visual {
+    max-width: none !important;
+    margin: 0 !important;
   }
 }
