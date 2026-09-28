@@ -1249,8 +1249,12 @@ a:focus-visible, button:focus-visible {
   }
 
   .hero-stat-pill {
-    display: block;
-  }
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  z-index: 20;
+}
 
   .slide-prev { left: 8px; }
   .slide-next { right: 8px; }
