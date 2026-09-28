@@ -1219,6 +1219,12 @@ a:focus-visible, button:focus-visible {
   }
 }
 
+.eyebrow-cake {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
 .contact-bakery-name {
   font-family: var(--font-display);
   font-size: 1.2rem;
