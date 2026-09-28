@@ -1202,3 +1202,19 @@ a:focus-visible, button:focus-visible {
     max-width: 600px;
   }
 }
+
+/* Fix excessive Hero height in Desktop Site mode */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 110px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .hero-inner {
+    min-height: auto !important;
+    height: auto !important;
+  }
+}
