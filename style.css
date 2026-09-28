@@ -1232,3 +1232,47 @@ a:focus-visible, button:focus-visible {
   color: var(--rose);
   line-height: 1.3;
 }
+
+/* Mobile Hero Slideshow Fix */
+@media (max-width: 768px) {
+
+  .hero-slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-prev,
+  .hero-next {
+    display: flex !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-prev {
+    left: 10px;
+  }
+
+  .hero-next {
+    right: 10px;
+  }
+
+  .hero-dots {
+    display: flex !important;
+    bottom: 18px;
+  }
+}
