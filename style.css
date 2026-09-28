@@ -1209,9 +1209,9 @@ a:focus-visible, button:focus-visible {
   .hero {
     min-height: auto !important;
     height: auto !important;
-    padding-top: 110px !important;
+    padding-top: 150px !important;
     padding-bottom: 80px !important;
-  }
+}
 
   .hero-inner {
     min-height: auto !important;
