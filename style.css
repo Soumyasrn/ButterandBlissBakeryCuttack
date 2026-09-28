@@ -458,20 +458,9 @@ a:focus-visible, button:focus-visible {
 
 .hero-prev,
 .hero-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(255,255,255,0.6);
-  border-radius: 50%;
-  background: rgba(255,255,255,0.55);
-  backdrop-filter: blur(10px);
-  color: var(--rose);
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 10;
-  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-prev {
