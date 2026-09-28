@@ -412,6 +412,7 @@ a:focus-visible, button:focus-visible {
   inset: 0;
   overflow: hidden;
   border-radius: inherit;
+  z-index: 5;
 }
 
 .hero-slide {
@@ -1123,6 +1124,25 @@ a:focus-visible, button:focus-visible {
 /* ──────────────────────────────────────────
    19. RESPONSIVE
 ────────────────────────────────────────── */
+
+/* Desktop Site on mobile/tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: auto;
+    height: auto;
+    align-items: flex-start;
+    padding: 70px 0 60px;
+  }
+
+  .hero-inner {
+    min-height: auto;
+    height: auto;
+  }
+}
+
+
+
+
 @media (max-width: 1024px) {
   .about-inner,
   .location-inner {
@@ -1229,12 +1249,8 @@ a:focus-visible, button:focus-visible {
   }
 
   .hero-stat-pill {
-  display: block !important;
-  position: absolute;
-  top: 28px;
-  right: -18px;
-  z-index: 30;
-}
+    display: block;
+  }
 
   .slide-prev { left: 8px; }
   .slide-next { right: 8px; }
@@ -1280,3 +1296,5 @@ a:focus-visible, button:focus-visible {
   .nav-header { width: calc(100% - 28px); border-radius: var(--r-lg); top: 12px; }
   .about-accent-card { position: static; margin-top: 16px; }
 }
+
+
