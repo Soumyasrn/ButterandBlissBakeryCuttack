@@ -1183,3 +1183,22 @@ a:focus-visible, button:focus-visible {
   .about-accent-card { position: static; margin-top: 16px; }
   .hero-trust { display: none; }
 }
+
+/* Desktop Site on Mobile - Hero Fix */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-inner {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hero-visual {
+    max-width: none;
+    margin: 0;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+}
