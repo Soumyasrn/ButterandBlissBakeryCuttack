@@ -1115,7 +1115,6 @@ a:focus-visible, button:focus-visible {
   .hero-visual { max-width: 440px; margin: 0 auto; }
   .about-visual { max-width: 440px; margin: 0 auto; }
   .about-accent-card { right: 0; }
-  .location-map { display: none; }
   .cakes-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; }
